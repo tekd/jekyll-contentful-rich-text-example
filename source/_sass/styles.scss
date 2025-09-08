@@ -7,18 +7,67 @@ $small-only: screen and (max-width: 39.9375em);
 $touch: screen and (max-width: 64em);
 $medium: screen and (min-width: 40em);
 $medium-only: screen and (min-width: 40em) and (max-width: 63.9375em);
-$large: screen and (min-width: 64em);
+$large: screen and(min-width: 64em);
 
 @import 'breakpoint';
 @import 'base';
 
-$white: #FFFFFF;
-$black: #000000;
-$gray-300: #24292C;
-$gray-200: #696C6D;
-$gray-100: #F8F8F8;
-$yellow: #EEC357;
-$purple: #5A43ED;
-$blue-200: #252346;
-$blue-100: #30AAB3;
-$red: #E64448;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2rem 4rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.table__title,
+.figure__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.table {
+  margin: 2rem 0;
+  width: 75%;
+  @include breakpoint($small-only) {
+    width: 100%;
+  }
+  height: auto;
+}
+.table__caption p,
+.figure__caption p {
+  font-style: italic;
+}
+
+.figure {
+  margin: 2rem 0;
+}
+
+.figure img {
+  width: 75%;
+  @include breakpoint($small-only) {
+    width: 100%;
+  }
+  height: auto;
+}

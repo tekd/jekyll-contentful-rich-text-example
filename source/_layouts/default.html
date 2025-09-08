@@ -8,21 +8,15 @@
     {% include seo_tags.html%}
     <title>{{page.title}}</title>
     <link rel="shortcut icon" href="{{'/images/favicon.ico' | relative_url}}" type="image/x-icon">
-    <!-- <link rel="stylesheet" href="{{'/vendor/styleguide-v2.1.css' | relative_url}}"> -->
-    <!-- <link rel="stylesheet" href="{{ '/vendor/foundation.min.css' | relative_url}}"> -->
+    <link rel="stylesheet" href="{{'/vendor/styleguide-v2.1.css' | relative_url}}">
+    <link rel="stylesheet" href="{{ '/vendor/foundation.min.css' | relative_url}}">
     <link rel="stylesheet" href="{{ '/assets/style.min.css' | relative_url}}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     
-
+    <a class="button" href="{{ '/resources/title-of-resource-h1' | relative_url }}">Jekyll, Contentful, and Rich Text Rendering</a>
     {{content}}
 
-   
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-    <script src="{{'/assets/bundle.js' | relative_url}}"></script> -->
   </body>
 </html>
