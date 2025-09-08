@@ -2,3 +2,8 @@
 layout: default
 title: Index
 ---
+{% assign data = site.data.contentful.resource.resource | first %}
+
+<main>
+  {{data.body | rich_text_to_html }}
+</main>
