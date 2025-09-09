@@ -16,7 +16,7 @@
     "build:prod": "webpack -p --env production",
     "deploy": "gulp deploy",
     "dev": "gulp",
-    "build": "gulp build",
+    "build": "gulp gulp-build",
     "lint": "eslint ./source/_js/**/*.js",
     "test": "echo \"No tests\" && exit 0",
     "mocha-watch": "mocha -w --recursive $(find spec -name '*.js')"
