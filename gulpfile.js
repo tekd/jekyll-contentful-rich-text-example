@@ -128,7 +128,7 @@ gulp.task('push-gh-main', shell.task(['git push origin main']));
 
 gulp.task('push-gh-pages', () => gulp.src('_site/**/*', { dot: true }).pipe(ghPages({ force: true })));
 
-gulp.task('deploy', gulp.series('build:prod', 'circleci', 'push-gh-main', 'push-gh-pages'));
+gulp.task('deploy', gulp.series('build:prod', 'push-gh-main', 'push-gh-pages'));
 
 /* =========================================
   serve
@@ -162,5 +162,5 @@ gulp.task('serve', done => {
   gulp.watch('_data/**.*+(yml|yaml|csv|json)', gulp.series('build:jekyll:dev', browserSyncReload));
   done();
 });
-gulp.task('build', gulp.series('build:dev'));
+gulp.task('build', gulp.series('build:prod'));
 gulp.task('default', gulp.series('build:dev','serve'));
