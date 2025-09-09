@@ -163,4 +163,5 @@ gulp.task('serve', done => {
   done();
 });
 gulp.task('build', gulp.series('build:prod'));
+gulp.task('build-netlify', gulp.series('build:dev'));
 gulp.task('default', gulp.series('build:dev','serve'));

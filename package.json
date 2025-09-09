@@ -17,6 +17,7 @@
     "deploy": "gulp deploy",
     "dev": "gulp",
     "build": "gulp build",
+    "build-netlify": "gulp build-netlify",
     "lint": "eslint ./source/_js/**/*.js",
     "test": "echo \"No tests\" && exit 0",
     "mocha-watch": "mocha -w --recursive $(find spec -name '*.js')"
