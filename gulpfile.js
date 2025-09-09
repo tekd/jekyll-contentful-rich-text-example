@@ -162,5 +162,5 @@ gulp.task('serve', done => {
   gulp.watch('_data/**.*+(yml|yaml|csv|json)', gulp.series('build:jekyll:dev', browserSyncReload));
   done();
 });
-gulp.task('build', gulp.series('build:prod'));
+gulp.task('build', gulp.series('build:dev'));
 gulp.task('default', gulp.series('build:dev','serve'));
