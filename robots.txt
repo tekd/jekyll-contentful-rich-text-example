@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: https://tekd.github.io/jekyll-contentful-rich-text-example/sitemap.xml
